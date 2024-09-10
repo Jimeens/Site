@@ -16,30 +16,29 @@ const projetosAtuais = [
     }
 ]
 
-const cardContainer = document.querySelector(".container-environment");
-const searchInput = document.querySelector("#searchInput");
+const cardAtual = document.querySelector(".container-environment");
+const searchAtual = document.querySelector("#searchAtual");
 
-
-const displayData = projetosAtuais => {
-    cardContainer.innerHTML = "";
-    projetosAtuais.forEach(e => {
-        cardContainer.innerHTML += `
+const atualProjects = projetosAtuais => {
+    cardAtual.innerHTML = "";
+    projetosAtuais.forEach(atuais => {
+        cardAtual.innerHTML += `
             <div class="container-item">
                 <h1>
-                    ${e.titulo}
+                    ${atuais.titulo}
                 </h1>
                 <p>
-                    ${e.desc}
+                    ${atuais.desc}
                 </p>
-                <p><a href="${e.link}">Saiba mais<i class="fas fa-arrow-right" style="margin-left: 10px"></i></a></p>
+                <p><a href="${atuais.link}">Saiba mais<i class="fas fa-arrow-right" style="margin-left: 10px"></i></a></p>
             </div>
         `
     });
 }
 
-searchInput.addEventListener("keyup", (e) => {
-    const search = projetosAtuais.filter(i => i.titulo.toLocaleLowerCase().includes(e.target.value.toLocaleLowerCase()))
-    displayData(search);
+searchAtual.addEventListener("keyup", (atuais) => {
+    const searchAtual = projetosAtuais.filter(i => i.titulo.toLocaleLowerCase().includes(atuais.target.value.toLocaleLowerCase()))
+    atualProjects(searchAtual);
 })
 
-window.addEventListener("load", displayData.bind(null,projetosAtuais));
+window.addEventListener("load", atualProjects.bind(null,projetosAtuais));
