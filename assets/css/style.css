@@ -63,8 +63,21 @@ h1 {
     font-family: orpheuspro, serif; font-style: normal; font-weight: 400;
     --height: 800px;
     font-size: calc(var(--height) * 0.1);
-    margin-top: calc(var(--height) * 0.4);
-    margin-bottom: calc(var(--height) * 0.4);
+    margin-top: calc(var(--height) * 0.35);
+    margin-bottom: calc(var(--height) * 0.55);
+    text-align: center;
+    position: relative;
+    top: calc(var(--height)*(-1));
+    margin-bottom: calc(var(--height)*(-0.6) - 24px);
+    z-index: 1;
+}
+
+.big-h1 {
+    font-family: orpheuspro, serif; font-style: normal; font-weight: 400;
+    --height: 800px;
+    font-size: calc(var(--height) * 0.2);
+    margin-top: calc(var(--height) * 0.35);
+    margin-bottom: calc(var(--height) * 0.35);
     text-align: center;
     position: relative;
     top: calc(var(--height)*(-1));
@@ -364,3 +377,30 @@ footer a:hover {
     text-decoration: underline;
 }
 
+
+
+
+.search {
+    display: flex;
+    align-items: center;
+    border: 1px solid #3a3a3a;
+    background-color: transparent;
+    width: 400px;
+    margin: 112px auto 16px ;
+    border-radius: 20px;
+    padding: 5px 10px;
+    color: #3a90f3;
+}
+
+#searchInput {
+    padding: 8px;
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    outline: none;
+    color: #f2f2f2;
+}
+
+.search label {
+    height: 20px;
+}
