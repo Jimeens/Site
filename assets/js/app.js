@@ -1,17 +1,17 @@
 const projetosAtuais = [
     {
         titulo: "Livro",
-        desc: `Texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto.`,
+        desc: `Em adição à umas das minhas iniciações científicas, foi colocada em prática o processo de escrever um livro/apostila sobre mecânica quântica.`,
         link: "#"
     },
     {
         titulo: "Site (One Piece)",
-        desc: `Texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto.`,
+        desc: `Afim de aprender HTML5, CSS e Javascript, comecei a produzir um simples site de One Piece com estas tecnologias envolvidas para estudar.`,
         link: "#"
     },
     {
         titulo: "Site (Pessoal)",
-        desc: `Texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto.`,
+        desc: `Tanto para armazenar informações profissionais quanto estudar um pouco de front-end, decidi produzir meu próprio site (este mesmo).`,
         link: "#"
     }
 ]
