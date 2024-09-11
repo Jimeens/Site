@@ -42,3 +42,10 @@ Aqui vou colocar todos os eventos e cursos que já participei, sejam eles do mei
 
 ### Sobre mim
 Como o nome já diz, ao clicar neste botão, o usuário será redirecionado para a aba `Sobre-mim.html` onde coloqueialgumas informações pessoais e profissionais, além de todas as informações de contato que disponibilizarei.
+
+## Melhorias a serem feitas
+Por ser um projeto em constante mudança, sempre há melhorias que podem ser implementadas, e em processo de aprendizagem, existem tarefas que ainda não sou capaz de executar, portanto, criei esta seção para, no futuro, inserir tais alterações no site.
+* Na página `Arquivos-gerais.html`, mais especificamente em relação à aba de pesquisas, fazer um input que selecione qual tipo de conteúdo eu desejo, um simples exemplo é o seguinte modelo:
+<img src="files/images/Search-bar-future.png">
+
+* Adicionar animação do conteúdo surgindo conforme a página é scrollada para baixo;
