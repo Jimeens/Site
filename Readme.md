@@ -22,5 +22,5 @@ Nesta seção, cujo arquivo que o representa é o `index.html`, temos uma aba de
 ### Menu
 Ao passar com o mouse em cima de menu, uma pequena caixa surge contendo algumas informações e foram divididas em
 * **Projetos Atuais:** Ao clicar, abrirá uma nova página, representada pelo arquivo `Projetos-atuais.html` que possui um input para pesquisas e os projetos que estou desenvolvendo atualmente. 
-* * Além do botão de Projetos atuais, coloquei alguns botões abaixo que redirecionam o usuário para as páginas dos respectivos projetos.
+* [ ] Além do botão de Projetos atuais, coloquei alguns botões abaixo que redirecionam o usuário para as páginas dos respectivos projetos.
 * **Arquivos Gerais** Ao clicar, você será redirecionada para a página do arquivo `Arquivos-gerais.html`, onde também possuirá um input de pesquisas, porém com todos os arquivos que disponibilizei no site.
