@@ -369,7 +369,7 @@ footer a:hover {
 
 
 
-.search-atual {
+.search {
     display: flex;
     align-items: center;
     border: 1px solid #3a3a3a;
@@ -379,6 +379,10 @@ footer a:hover {
     border-radius: 20px;
     padding: 5px 10px;
     color: #3a90f3;
+}
+
+.search label {
+    height: 20px;
 }
 
 #searchAtual {
@@ -390,22 +394,6 @@ footer a:hover {
     color: #f2f2f2;
 }
 
-.search-atual label {
-    height: 20px;
-}
-
-.search-geral {
-    display: flex;
-    align-items: center;
-    border: 1px solid #3a3a3a;
-    background-color: transparent;
-    width: 400px;
-    margin: 60px auto 0px ;
-    border-radius: 20px;
-    padding: 5px 10px;
-    color: #3a90f3;
-}
-
 #searchGeral {
     padding: 8px;
     border: none;
@@ -413,22 +401,6 @@ footer a:hover {
     width: 100%;
     outline: none;
     color: #f2f2f2;
-}
-
-.search-geral label {
-    height: 20px;
-}
-
-.search-grad {
-    display: flex;
-    align-items: center;
-    border: 1px solid #3a3a3a;
-    background-color: transparent;
-    width: 400px;
-    margin: 60px auto 0px ;
-    border-radius: 20px;
-    padding: 5px 10px;
-    color: #3a90f3;
 }
 
 #searchGrad {
@@ -440,26 +412,6 @@ footer a:hover {
     color: #f2f2f2;
 }
 
-.search-grad label {
-    height: 20px;
-}
-
-.search-geral label {
-    height: 20px;
-}
-
-.search-pos {
-    display: flex;
-    align-items: center;
-    border: 1px solid #3a3a3a;
-    background-color: transparent;
-    width: 400px;
-    margin: 60px auto 0px ;
-    border-radius: 20px;
-    padding: 5px 10px;
-    color: #3a90f3;
-}
-
 #searchPos {
     padding: 8px;
     border: none;
@@ -469,6 +421,20 @@ footer a:hover {
     color: #f2f2f2;
 }
 
-.search-pos label {
-    height: 20px;
+#searchIC {
+    padding: 8px;
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    outline: none;
+    color: #f2f2f2;
+}
+
+#searchExtra {
+    padding: 8px;
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    outline: none;
+    color: #f2f2f2;
 }

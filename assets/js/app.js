@@ -18,6 +18,14 @@ const cardPos = document.querySelector(".container-environment");
 const searchPos = document.querySelector("#searchPos");
 const projetosPos = projetosGerais.filter(i => i.identificacao == "Pós-graduação");
 
+const cardIC = document.querySelector(".container-environment");
+const searchIC = document.querySelector("#searchIC");
+const projetosIC = projetosGerais.filter(i => i.identificacao == "Iniciação Científica");
+
+const cardExtra = document.querySelector(".container-environment");
+const searchExtra = document.querySelector("#searchExtra");
+const projetosExtra = projetosGerais.filter(i => i.identificacao == "Projetos extras");
+
 const favoriteProjects = projetosFavoritos => {
     cardFavaorito.innerHTML = "";
     projetosFavoritos.forEach(favoritos => {
@@ -112,6 +120,46 @@ const posProjects = projetosPos => {
     });
 };
 
+const icProjects = projetosIC => {
+    cardIC.innerHTML = "";
+    projetosIC.forEach(ic => {
+        cardIC.innerHTML += `
+            <div class="container-item">
+                <h1>
+                    ${ic.titulo}
+                </h1>
+                <h2 style="color: #3a90f3">
+                    ${ic.identificacao}
+                </h2>
+                <h2>
+                    ${ic.extra}
+                </h2>
+                <p><a href="${ic.link}">Saiba mais<i class="fas fa-arrow-right" style="margin-left: 10px"></i></a></p>
+            </div>
+        `
+    });
+};
+
+const extraProjects = projetosExtra => {
+    cardExtra.innerHTML = "";
+    projetosExtra.forEach(extra => {
+        cardExtra.innerHTML += `
+            <div class="container-item">
+                <h1>
+                    ${extra.titulo}
+                </h1>
+                <h2 style="color: #3a90f3">
+                    ${extra.identificacao}
+                </h2>
+                <h2>
+                    ${extra.extra}
+                </h2>
+                <p><a href="${extra.link}">Saiba mais<i class="fas fa-arrow-right" style="margin-left: 10px"></i></a></p>
+            </div>
+        `
+    });
+};
+
 window.addEventListener("load", favoriteProjects.bind(null,projetosFavoritos))
 
 if (cardAtual && searchAtual) {
@@ -149,4 +197,13 @@ if (cardPos && searchPos) {
     })
 
     window.addEventListener("load", posProjects.bind(null,projetosPos));  
+};
+
+if (cardExtra && searchExtra) {
+    searchExtra.addEventListener("keyup", (extra) => {
+        const searchExtra = projetosExtra.filter(i => i.titulo.toLocaleLowerCase().includes(extra.target.value.toLocaleLowerCase()))
+        icProjects(searchExtra);
+    })
+
+    window.addEventListener("load", extraProjects.bind(null,projetosExtra));  
 };
