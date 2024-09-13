@@ -1,6 +1,34 @@
+export const projetosFavoritos = [
+    {
+        titulo: "Livro de Mecânica Quântica",
+        desc: `Em adição à umas das minhas iniciações científicas, foi colocada em prática o processo de escrever um livro/apostila sobre mecânica quântica.`,
+        link: "#"
+    },
+    {
+        titulo: "Site (Pessoal)",
+        desc: `Tanto para armazenar informações profissionais quanto estudar um pouco de front-end, decidi produzir meu próprio site (este mesmo).`,
+        link: "#"
+    },
+    {
+        titulo: "The BKT phase transition",
+        desc: `Tanto para armazenar informações profissionais quanto estudar um pouco de front-end, decidi produzir meu próprio site (este mesmo).`,
+        link: "#"
+    },
+    {
+        titulo: "Estudo sobre Teoria de Categorias",
+        desc: `Tanto para armazenar informações profissionais quanto estudar um pouco de front-end, decidi produzir meu próprio site (este mesmo).`,
+        link: "#"
+    },
+    {
+        titulo: "Template for Homework Solutions",
+        desc: `Tanto para armazenar informações profissionais quanto estudar um pouco de front-end, decidi produzir meu próprio site (este mesmo).`,
+        link: "#"
+    }
+];
+
 export const projetosAtuais = [
     {
-        titulo: "Livro",
+        titulo: "Livro de Mecânica Quântica",
         desc: `Em adição à umas das minhas iniciações científicas, foi colocada em prática o processo de escrever um livro/apostila sobre mecânica quântica.`,
         link: "#"
     },
@@ -36,7 +64,7 @@ export const projetosGerais = [
             Apostila`
     },
     {
-        titulo: "Eletrodinâmica Clássica I &#160; &#160;<br></br>",
+        titulo: "Eletrodinâmica Clássica I &#160; &#160; &#160; &#160;<br></br>",
         identificacao: "Pós-graduação",
         extra: "Ivone F. Albuquerque",
         link: "#",
@@ -83,7 +111,7 @@ export const projetosGerais = [
         `
     },
     {
-        titulo: "Mecânica Quântica Avançada I",
+        titulo: "Mecânica Quântica Avançada I<br></br>",
         identificacao: "Pós-graduação",
         extra: "Alberto M. Torres",
         link: "#",
@@ -124,7 +152,7 @@ export const projetosGerais = [
         `
     },
     {
-        titulo: "Física Matemática III<br></br>",
+        titulo: "Física Matemática III &#160; &#160;<br></br>",
         identificacao: "Graduação",
         extra: "João C. A. Barata",
         link: "#",
@@ -150,7 +178,7 @@ export const projetosGerais = [
         `
     },
     {
-        titulo: "Física Matemática II<br></br>",
+        titulo: "Física Matemática II &#160; &#160; &#160;<br></br>",
         identificacao: "Graduação",
         extra: "Paulo Teotônio",
         link: "#",
@@ -192,7 +220,7 @@ export const projetosGerais = [
     {
         titulo: "Fundamentos de Química para Física",
         identificacao: "Graduação",
-        extra: "",
+        extra: "Alguém",
         link: "#",
         tags: `
             Fundamentos de Química para Física
@@ -232,7 +260,7 @@ export const projetosGerais = [
         `
     },
     {
-        titulo: "Mecânica Quântica II<br></br>",
+        titulo: "Mecânica Quântica II &#160; &#160; &#160; <br></br>",
         identificacao: "Graduação",
         extra: "Alexandre A. Suaide",
         link: "#",
@@ -257,7 +285,7 @@ export const projetosGerais = [
         `
     },
     {
-        titulo: "Eletromagnetismo I &#160;<br></br>",
+        titulo: "Eletromagnetismo I &#160; &#160; &#160; &#160; &#160;<br></br>",
         identificacao: "Graduação",
         extra: "Marcelo Martinelli",
         link: "#",
@@ -274,7 +302,7 @@ export const projetosGerais = [
         `
     },
     {
-        titulo: "Mecânica dos Fluidos<br></br>",
+        titulo: "Mecânica dos Fluidos &#160; &#160; &#160; &#160;<br></br>",
         identificacao: "Graduação",
         extra: "Frédérique Grassi",
         link: "#",
@@ -350,7 +378,7 @@ export const projetosGerais = [
         `
     },
     {
-        titulo: "Mecânica Quântica I<br></br>",
+        titulo: "Mecânica Quântica I &#160; &#160; &#160; &#160;<br></br>",
         identificacao: "Graduação",
         extra: "Alexandre A. Suaide",
         link: "#",
@@ -375,7 +403,7 @@ export const projetosGerais = [
         `
     },
     {
-        titulo: "Template for Homework Solutions",
+        titulo: "Template for Homework Solutions<br></br>",
         identificacao: "Projetos extras",
         extra: "LaTeX Template",
         link: "#",
@@ -430,7 +458,7 @@ export const projetosGerais = [
         `
     },
     {
-        titulo: "Mecânica I&#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160;<br></br>",
+        titulo: "Mecânica I&#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160;<br></br>",
         identificacao: "Graduação",
         extra: "Airton Deppman",
         link: "#",
@@ -453,7 +481,7 @@ export const projetosGerais = [
         `
     },
     {
-        titulo: "Física Quântica &#160; &#160; &#160; &#160;<br></br>",
+        titulo: "Física Quântica &#160; &#160; &#160; &#160; &#160; &#160; &#160;<br></br>",
         identificacao: "Graduação",
         extra: "Edivaldo M. Santos",
         link: "#",
@@ -474,7 +502,7 @@ export const projetosGerais = [
         `
     },
     {
-        titulo: "Física Experimental V<br></br>",
+        titulo: "Física Experimental V &#160; &#160; &#160; &#160; &#160;<br></br>",
         identificacao: "Graduação",
         extra: "Rosângela Itri",
         link: "#",
@@ -497,7 +525,7 @@ export const projetosGerais = [
         `
     },
     {
-        titulo: "Mecânica Estatística<br></br>",
+        titulo: "Mecânica Estatística &#160; &#160; &#160; &#160; &#160;<br></br>",
         identificacao: "Graduação",
         extra: "Nestor F. Caticha",
         link: "#",
@@ -537,7 +565,7 @@ export const projetosGerais = [
         `
     },
     {
-        titulo: "Cálculo Diferencial e Integral IV",
+        titulo: "Cálculo Diferencial e Integral IV<br></br>",
         identificacao: "Graduação",
         extra: "Antônio Paduá",
         link: "#",
@@ -588,7 +616,7 @@ export const projetosGerais = [
         `
     },
     {
-        titulo: "Física Experimental IV<br></br>",
+        titulo: "Física Experimental IV &#160; &#160; &#160; &#160;<br></br>",
         identificacao: "Graduação",
         extra: "Félix Hernandez",
         link: "#",
@@ -612,7 +640,7 @@ export const projetosGerais = [
     },
     
     {
-        titulo: "Física IV &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160;<br></br>",
+        titulo: "Física IV &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160;<br></br>",
         identificacao: "Graduação",
         extra: "Ivone F. Albuquerque",
         link: "#",
@@ -633,7 +661,7 @@ export const projetosGerais = [
         `
     },
     {
-        titulo: "Física Matemática I &#160;<br></br>",
+        titulo: "Física Matemática I &#160; &#160; &#160; &#160;<br></br>",
         identificacao: "Graduação",
         extra: "Matthew Luzum",
         link: "#",
@@ -680,7 +708,7 @@ export const projetosGerais = [
         `
     },
     {
-        titulo: "Cálculo Diferencial e Integral III",
+        titulo: "Cálculo Diferencial e Integral III<br></br>",
         identificacao: "Graduação",
         extra: "Edson Vargas",
         link: "#",
@@ -703,7 +731,7 @@ export const projetosGerais = [
         `
     },
     {
-        titulo: "Álgebra Linear I&#160; &#160; &#160; &#160; &#160; <br></br>",
+        titulo: "Álgebra Linear I&#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160;<br></br>",
         identificacao: "Graduação",
         extra: "Juan Carlos",
         link: "#",
@@ -724,7 +752,7 @@ export const projetosGerais = [
         `
     },
     {
-        titulo: "Física Experimental III<br></br>",
+        titulo: "Física Experimental III &#160; &#160; &#160;<br></br>",
         identificacao: "Graduação",
         extra: "Nelson Carlin",
         link: "#",
@@ -746,7 +774,7 @@ export const projetosGerais = [
         `
     },
     {
-        titulo: "Física III &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160;<br></br>",
+        titulo: "Física III &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160;<br></br>",
         identificacao: "Graduação",
         extra: "Ivone F. Albuquerque",
         link: "#",
@@ -767,7 +795,7 @@ export const projetosGerais = [
         `
     },
     {
-        titulo: "Probabilidade &#160; &#160; &#160; &#160; &#160; <br></br>",
+        titulo: "Probabilidade &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160;<br></br>",
         identificacao: "Graduação",
         extra: "Nestor F. Caticha",
         link: "#",
@@ -782,7 +810,7 @@ export const projetosGerais = [
         `
     },
     {
-        titulo: "Cálculo Diferencial e Integral II",
+        titulo: "Cálculo Diferencial e Integral II<br></br>",
         identificacao: "Graduação",
         extra: "Stanley Orlando",
         link: "#",
@@ -821,7 +849,7 @@ export const projetosGerais = [
         `
     },
     {
-        titulo: "Física Experimental II<br></br>",
+        titulo: "Física Experimental II &#160; &#160; &#160;<br></br>",
         identificacao: "Graduação",
         extra: "José D. Chubaci",
         link: "#",
@@ -847,7 +875,7 @@ export const projetosGerais = [
         `
     },
     {
-        titulo: "Física II &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160;<br></br>",
+        titulo: "Física II &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160;<br></br>",
         identificacao: "Graduação",
         extra: "Marcelo Martinelli",
         link: "#",
@@ -865,7 +893,7 @@ export const projetosGerais = [
         `
     },
     {
-        titulo: "Vetores e Geometria<br></br>",
+        titulo: "Vetores e Geometria &#160; &#160; &#160; &#160;<br></br>",
         identificacao: "Graduação",
         extra: "Alexandre Grichkov",
         link: "#",
@@ -881,7 +909,7 @@ export const projetosGerais = [
         `
     },
     {
-        titulo: "Cálculo Diferencial e Integral I",
+        titulo: "Cálculo Diferencial e Integral I<br></br>",
         identificacao: "Graduação",
         extra: "Oscar J. Abdounour",
         link: "#",
@@ -903,7 +931,7 @@ export const projetosGerais = [
         `
     },
     {
-        titulo: "Física Experimental I<br></br>",
+        titulo: "Física Experimental I &#160; &#160; &#160; &#160;<br></br>",
         identificacao: "Graduação",
         extra: "José D. Chubaci",
         link: "#",
@@ -930,7 +958,7 @@ export const projetosGerais = [
     },
     
     {
-        titulo: "Física I &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160;<br></br>",
+        titulo: "Física I &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160;<br></br>",
         identificacao: "Graduação",
         extra: "Valentina Martelli",
         link: "#",

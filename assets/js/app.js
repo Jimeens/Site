@@ -1,11 +1,39 @@
+import {projetosFavoritos} from "./data.js";
 import {projetosAtuais} from "./data.js";
 import {projetosGerais} from "./data.js";
+
+const cardFavaorito = document.querySelector(".container-environment");
 
 const cardAtual = document.querySelector(".container-environment");
 const searchAtual = document.querySelector("#searchAtual");
 
 const cardGeral = document.querySelector(".container-environment");
 const searchGeral = document.querySelector("#searchGeral");
+
+const cardGrad = document.querySelector(".container-environment");
+const searchGrad = document.querySelector("#searchGrad");
+const projetosGrad = projetosGerais.filter(i => i.identificacao == "Graduação");
+
+const cardPos = document.querySelector(".container-environment");
+const searchPos = document.querySelector("#searchPos");
+const projetosPos = projetosGerais.filter(i => i.identificacao == "Pós-graduação");
+
+const favoriteProjects = projetosFavoritos => {
+    cardFavaorito.innerHTML = "";
+    projetosFavoritos.forEach(favoritos => {
+        cardFavaorito.innerHTML += `
+            <div class="container-item">
+                <h1>
+                    ${favoritos.titulo}
+                </h1>
+                <p>
+                    ${favoritos.desc}
+                </p>
+                <p><a href="${favoritos.link}">Saiba mais<i class="fas fa-arrow-right" style="margin-left: 10px"></i></a></p>
+            </div>
+        `
+    });
+};
 
 const atualProjects = projetosAtuais => {
     cardAtual.innerHTML = "";
@@ -44,6 +72,48 @@ const geralProjects = projetosGerais => {
     });
 };
 
+const gradProjects = projetosGrad => {
+    cardGrad.innerHTML = "";
+    projetosGrad.forEach(grad => {
+        cardGrad.innerHTML += `
+            <div class="container-item">
+                <h1>
+                    ${grad.titulo}
+                </h1>
+                <h2 style="color: #3a90f3">
+                    ${grad.identificacao}
+                </h2>
+                <h2>
+                    ${grad.extra}
+                </h2>
+                <p><a href="${grad.link}">Saiba mais<i class="fas fa-arrow-right" style="margin-left: 10px"></i></a></p>
+            </div>
+        `
+    });
+};
+
+const posProjects = projetosPos => {
+    cardPos.innerHTML = "";
+    projetosPos.forEach(pos => {
+        cardPos.innerHTML += `
+            <div class="container-item">
+                <h1>
+                    ${pos.titulo}
+                </h1>
+                <h2 style="color: #3a90f3">
+                    ${pos.identificacao}
+                </h2>
+                <h2>
+                    ${pos.extra}
+                </h2>
+                <p><a href="${pos.link}">Saiba mais<i class="fas fa-arrow-right" style="margin-left: 10px"></i></a></p>
+            </div>
+        `
+    });
+};
+
+window.addEventListener("load", favoriteProjects.bind(null,projetosFavoritos))
+
 if (cardAtual && searchAtual) {
     searchAtual.addEventListener("keyup", (atuais) => {
         const searchAtual = projetosAtuais.filter(i => i.titulo.toLocaleLowerCase().includes(atuais.target.value.toLocaleLowerCase()))
@@ -63,7 +133,20 @@ if (cardGeral && searchGeral) {
     window.addEventListener("load", geralProjects.bind(null,projetosGerais));
 }
 
+if (cardGrad && searchGrad) {
+    searchGrad.addEventListener("keyup", (grad) => {
+        const searchGrad = projetosGrad.filter(i => i.titulo.toLocaleLowerCase().includes(grad.target.value.toLocaleLowerCase()))
+        gradProjects(searchGrad);
+    })
 
+    window.addEventListener("load", gradProjects.bind(null,projetosGrad));  
+};
 
+if (cardPos && searchPos) {
+    searchPos.addEventListener("keyup", (pos) => {
+        const searchPos = projetosPos.filter(i => i.titulo.toLocaleLowerCase().includes(pos.target.value.toLocaleLowerCase()))
+        posProjects(searchPos);
+    })
 
-
+    window.addEventListener("load", posProjects.bind(null,projetosPos));  
+};
