@@ -16,8 +16,8 @@
     position: relative;
     max-width: 1900px;
     padding: 0px 30px;
-    height: 70px;
-    line-height: 70px;
+    height: calc(100% * 1);
+    line-height: calc(100% * 3);
     margin: auto;
     display: flex;
     align-items: center;
