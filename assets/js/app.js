@@ -1,6 +1,9 @@
+import {novidades} from "./data.js";
 import {projetosFavoritos} from "./data.js";
 import {projetosAtuais} from "./data.js";
 import {projetosGerais} from "./data.js";
+
+const cardNovidade = document.querySelector(".intro");
 
 const cardFavaorito = document.querySelector(".container-environment");
 
@@ -25,6 +28,56 @@ const projetosIC = projetosGerais.filter(i => i.identificacao == "Iniciação Ci
 const cardExtra = document.querySelector(".container-environment");
 const searchExtra = document.querySelector("#searchExtra");
 const projetosExtra = projetosGerais.filter(i => i.identificacao == "Projetos extras");
+
+const news = novidades => {
+    cardNovidade.innerHTML = "";
+    novidades.forEach(novidade => {
+        if (novidade.direct == "Esquerda"){
+            cardNovidade.innerHTML += `
+                <div class="black-div">
+                    <section class="black-section-left">
+                        <div>
+                            <img src="${novidade.imagem}" alt="">
+                        </div>
+                        <div style="align-items: center;">
+                            <h1>
+                                ${novidade.titulo}
+                            </h1>
+                            <p>
+                                ${novidade.desc}
+                            </p>
+                            <a class="black-section-left-btn" href="${novidade.link}">
+                                <span>Saiba mais</span>
+                            </a>
+                        </div>
+                    </section>
+                </div>
+            `
+        }
+        if (novidade.direct == "Direita"){
+            cardNovidade.innerHTML += `
+                <div class="black-div">
+                    <section class="black-section-right">
+                        <div>
+                            <h1>
+                                ${novidade.titulo}
+                            </h1>
+                            <p>
+                                ${novidade.desc}
+                            </p>
+                            <a class="black-section-right-btn" href="${novidade.link}">
+                                <span>Saiba mais</span>
+                            </a>
+                        </div>
+                        <div>
+                            <img src="${novidade.imagem}" alt="">
+                        </div>
+                    </section>
+                </div>
+            `
+        }      
+    })
+};
 
 const favoriteProjects = projetosFavoritos => {
     cardFavaorito.innerHTML = "";
@@ -159,6 +212,8 @@ const extraProjects = projetosExtra => {
         `
     });
 };
+
+window.addEventListener("load", news.bind(null,novidades));
 
 window.addEventListener("load", favoriteProjects.bind(null,projetosFavoritos))
 
