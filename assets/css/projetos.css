@@ -1,0 +1,30 @@
+.fundamentos-teoricos-de-mq {
+    width: 100vw;
+    --height: calc(100vh * 0.65);
+    text-align: center;
+    font-family: orpheuspro, serif; 
+    font-style: normal; 
+    font-weight: 400;
+    font-size: calc(var(--height) * 0.2);
+    letter-spacing: 1px;
+    padding-top: calc(var(--height) * 0.4);
+    padding-bottom: calc(var(--height) * 0.4);
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+    position: static;
+    z-index: 1;
+}
+
+.fundamentos-teoricos-de-mq::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background-image: url(/files/PDF/Book/Livro/Figuras/marble\ bg.png);
+    background-size: cover;
+    filter: brightness(0.405);
+    z-index: -1;
+}

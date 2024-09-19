@@ -254,6 +254,15 @@ if (cardPos && searchPos) {
     window.addEventListener("load", posProjects.bind(null,projetosPos));  
 };
 
+if (cardIC && searchIC) {
+    searchIC.addEventListener("keyup", (extra) => {
+        const searchIC = projetosIC.filter(i => i.titulo.toLocaleLowerCase().includes(extra.target.value.toLocaleLowerCase()))
+        icProjects(searchIC);
+    })
+
+    window.addEventListener("load", extraProjects.bind(null,projetosIC));  
+};
+
 if (cardExtra && searchExtra) {
     searchExtra.addEventListener("keyup", (extra) => {
         const searchExtra = projetosExtra.filter(i => i.titulo.toLocaleLowerCase().includes(extra.target.value.toLocaleLowerCase()))
