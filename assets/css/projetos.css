@@ -23,7 +23,7 @@
     height: 100%;
     top: 0px;
     left: 0px;
-    background-image: url(/files/PDF/Book/Livro/Figuras/marble\ bg.png);
+    background-image: url(/files/images/marble-bg.png);
     background-size: cover;
     filter: brightness(0.405);
     z-index: -1;
