@@ -28,6 +28,7 @@ const projetosIC = projetosGerais.filter(i => i.identificacao == "Iniciação Ci
 const cardExtra = document.querySelector(".container-environment");
 const searchExtra = document.querySelector("#searchExtra");
 const projetosExtra = projetosGerais.filter(i => i.identificacao == "Projetos extras");
+const projetosExtradois = projetosGerais.filter(i => i.identificacaodois == "Guloso");
 
 const news = novidades => {
     cardNovidade.innerHTML = "";
@@ -113,25 +114,120 @@ const atualProjects = projetosAtuais => {
     });
 };
 
-const geralProjects = projetosGerais => {
-    cardGeral.innerHTML = "";
-    projetosGerais.forEach(gerais => {
-        cardGeral.innerHTML += `
-            <div class="container-item">
-                <h1>
-                    ${gerais.titulo}
-                </h1>
-                <h2 style="color: #3a90f3">
-                    ${gerais.identificacao}
-                </h2>
-                <h2>
-                    ${gerais.extra}
-                </h2>
-                <p><a href="${gerais.link}">Saiba mais<i class="fas fa-arrow-right" style="margin-left: 10px"></i></a></p>
-            </div>
-        `
+const valoresNumero = [3.0, 3.1, 3.2, 3.3, 3.4, 3.5, 3.6, 3.7, 3.8, 3.9, 4.0, 4.1, 4.2, 4.3, 4.4, 4.5, 4.6, 4.7, 4.8, 4.9, 5.0];
+
+const mensagensStatus = [
+    "ESTÁ DANDO",
+    "ESTÁ LIVRE",
+    "ESTÁ REBOLANDO",
+    "ESTÁ SENTANDO",
+    "ESTÁ MAMANDO",
+    "ESTÁ MAMANDO E SENTANDO"
+];
+
+const hashString = texto => {
+    let hash = 0;
+    for (let i = 0; i < texto.length; i++) {
+        hash = ((hash << 5) - hash) + texto.charCodeAt(i);
+        hash |= 0;
+    }
+    return Math.abs(hash);
+};
+
+const getChaveHorario = () => {
+    const agora = new Date();
+
+    const partes = new Intl.DateTimeFormat("pt-BR", {
+        timeZone: "America/Sao_Paulo",
+        year: "numeric",
+        month: "2-digit",
+        day: "2-digit",
+        hour: "2-digit",
+        hour12: false
+    }).formatToParts(agora);
+
+    const get = tipo => partes.find(p => p.type === tipo)?.value;
+
+    const ano = get("year");
+    const mes = get("month");
+    const dia = get("day");
+    const hora = Number(get("hour"));
+
+    const bloco = hora; // 0 a 12
+
+    return `${ano}-${mes}-${dia}-bloco-${bloco}`;
+};
+
+const gerarNumeroFixo = (projeto, chaveHorario) => {
+    const index = hashString(`${projeto.titulo}-${chaveHorario}-numero`) % valoresNumero.length;
+    const numero = valoresNumero[index];
+
+    return numero.toFixed(1);
+};
+
+const gerarStatusFixo = (projeto, chaveHorario) => {
+    const index = hashString(`${projeto.titulo}-${chaveHorario}-status`) % mensagensStatus.length;
+    return mensagensStatus[index];
+};
+
+const atualizarProjetosGerais = () => {
+    const chaveHorario = getChaveHorario();
+
+    projetosGerais.forEach(projeto => {
+        projeto.numeroAleatorio = gerarNumeroFixo(projeto, chaveHorario);
+        projeto.status = gerarStatusFixo(projeto, chaveHorario);
     });
 };
+
+const ordenarPorNumero = projetos => {
+    return [...projetos].sort((a, b) => {
+        return Number(b.numeroAleatorio) - Number(a.numeroAleatorio);
+    });
+};
+
+const geralProjects = projetos => {
+    cardGeral.innerHTML = "";
+
+    ordenarPorNumero(projetos).forEach(gerais => {
+
+        cardGeral.innerHTML += `
+            <div class="container-item">
+                <div class="coluna">
+                    <h1>${gerais.titulo}</h1>
+
+                    <div class="wrapper">
+                        <ul class="nav-links">
+                            <li><p>${gerais.identificacao}</p></li>
+                            <li><p>${gerais.identificacaodois}</p></li>
+                            <li><p>${gerais.identificacaotres}</p></li>
+                        </ul>
+                    </div>
+
+                    <h2>
+                        ${gerais.numeroAleatorio} | 5.0
+                    </h2>
+                </div>
+
+                <div class="coluna">
+                    <h3>
+                        ${gerais.status}
+                    </h3>
+                </div>
+            </div>
+        `;
+    });
+};
+
+// render inicial
+atualizarProjetosGerais();
+geralProjects(projetosGerais);
+
+// atualiza os números a cada 10 minutos
+setInterval(() => {
+    atualizarProjetosGerais();
+    geralProjects(projetosGerais);
+}, 60 * 1000);
+
 
 const gradProjects = projetosGrad => {
     cardGrad.innerHTML = "";

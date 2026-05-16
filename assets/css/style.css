@@ -46,12 +46,12 @@ h1 {
 
 .big-h1 {
     width: 100vw;
-    --height: calc(100vh * 0.65);
+    --height: calc(100vh * 0.35);
     text-align: center;
     font-family: orpheuspro, serif; 
     font-style: normal; 
     font-weight: 400;
-    font-size: calc(var(--height) * 0.2);
+    font-size: calc(var(--height) * 0.5);
     letter-spacing: 1px;
     padding-top: calc(var(--height) * 0.4);
     padding-bottom: calc(var(--height) * 0.4);
@@ -165,7 +165,7 @@ h1 {
     padding-left: 100px;
     padding-right: 100px;
     font-size: 20px;
-    border: #3a90f3 1px solid;
+    border: #9a3af3 1px solid;
     cursor: pointer;
     z-index: 1;
 }
@@ -177,7 +177,7 @@ h1 {
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: #3a90f3;
+    background-color: #9a3af3;
     transform: translateX(-100%);
     transition: all .6s;
     z-index: -1;
@@ -299,7 +299,7 @@ h1 {
     padding-left: 100px;
     padding-right: 100px;
     font-size: 20px;
-    border: #3a90f3 1px solid;
+    border: #9a3af3 1px solid;
     cursor: pointer;
     z-index: 1;
 }
@@ -311,7 +311,7 @@ h1 {
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: #3a90f3;
+    background-color: #9a3af3;
     transform: translateX(-100%);
     transition: all .6s;
     z-index: -1;
@@ -366,19 +366,25 @@ h1 {
 
 .container-item {
     display: flex;
-    flex-direction: column;
-    width: 565px;
+    flex-direction: row;
+    width: 1565px;
     height: 323px;
     margin: 11px;
     border: #3a3a3a 1px solid;
     border-left-width: 5px;
     justify-content: center;
-    padding-top: 60px;
+    align-items: center;
+    padding-top: 0px;
     padding-left: 60px;
     padding-right: 60px;
-    padding-bottom: 60px;
+    padding-bottom: 0px;
 }
 
+.container-item .wrappertwo {
+    display: flex;
+    flex-direction: column;
+    width: calc(1565px /2)
+}
 
 .container-item:hover {
     border-left: #f2f2f2 5px solid;
@@ -388,7 +394,6 @@ h1 {
 
 .container-item h1 {
     text-align: left;
-    font-family: orpheuspro, serif;
     font-style: normal;
     font-weight: 400;
     float: left;
@@ -397,13 +402,27 @@ h1 {
     font-size: 29px;
 }
 
+.container-item h2 {
+    background: #9a3af3;
+    color: white;
+    width: 115px;
+    padding: 4px 10px;
+
+    border-radius: 12px;
+
+    display: inline-block;
+}
+
 .container-item a {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
     text-decoration: none;
-    color: #3a90f3;
+    color: #9a3af3;
 }
 
 .container-item a:hover {
-    color: #1b5394;
+    color: #5d1b94;
 }
 
 .container-item p {
@@ -471,7 +490,7 @@ h1 {
     margin-right: 20px;
     margin-bottom: 30px;
     text-decoration: none;
-    color: #3a90f3;
+    color: #9a3af3;
 }
 
 .blue-a:hover {
@@ -510,7 +529,7 @@ footer a {
     margin-right: 20px;
     margin-bottom: 30px;
     text-decoration: none;
-    color: #3a90f3;
+    color: #9a3af3;
 }
 
 footer a:hover {
@@ -538,7 +557,7 @@ footer a:hover {
     margin: 60px auto 0px ;
     border-radius: 20px;
     padding: 5px 10px;
-    color: #3a90f3;
+    color: #9a3af3;
 }
 
 .search label {
