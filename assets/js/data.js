@@ -460,4 +460,37 @@ export const projetosGerais = [
             Guloso
             guloso`
     },
+    {
+        titulo: "Pai do CaioFVS_",
+        identificacao: "Especialista em rebolar",
+        identificacaodois: "Bundudo",
+        identificacaotres: "Safado",
+        tags: `
+            CaioFVS_
+            Caio
+            caio
+            Especialista em rebolar
+            especialista em rebolar
+            Bundudo
+            bundudo
+            Safado
+            safado`
+    },
+
+    {
+        titulo: "Pai do NiicolasRB",
+        identificacao: "Pervertido",
+        identificacaodois: "Tímido",
+        identificacaotres: "Selvagem",
+        tags: `
+            NiicolasRB
+            Nicolas
+            nicolas
+            Pervertido
+            pervertido
+            Tímido
+            tímido
+            Selvagem
+            selvagem`
+    },
 ];
