@@ -401,6 +401,8 @@ export const projetosGerais = [
             doodoug
             Doodoug
             doodoug
+            doug
+            Doug
             Bundudo
             bundudo
             Selvagem
