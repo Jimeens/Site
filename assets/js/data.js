@@ -81,10 +81,9 @@ export const projetosGerais = [
         identificacaodois: "Boquinha de veludo",
         identificacaotres: "Bundudo",
         tags: `
-            feanohrck_
-            feanoh
-            feanho
-            bombas
+            KariHudo
+            kari
+            Kari
             Pervertido
             pervertido
             Boquinha de veludo
