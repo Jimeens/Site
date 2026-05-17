@@ -494,11 +494,12 @@ export const projetosGerais = [
             selvagem`
     },
     {
-        titulo: "Pai do Stinxy",
+        titulo: "Pai do st1nxyy",
         identificacao: "BDSM",
         identificacaodois: "Boquinha de veludo",
         identificacaotres: "Guloso",
         tags: `
+            st1nxyy
             Stinxy
             stinxy
             BDSM
