@@ -509,4 +509,59 @@ export const projetosGerais = [
             Guloso
             guloso`
     },
+    {
+    titulo: "Pai do NightSann",
+    identificacao: "Selvagem",
+    identificacaodois: "Safado",
+    identificacaotres: "Especialista em rebolar",
+    tags: `
+        NightSann
+        NightSann
+        nightsann
+        Night
+        night
+        Selvagem
+        selvagem
+        Safado
+        safado
+        Especialista em rebolar
+        especialista em rebolar`
+},
+
+{
+    titulo: "Pai do yukxh",
+    identificacao: "Boquinha de veludo",
+    identificacaodois: "Bundudo",
+    identificacaotres: "Tímido",
+    tags: `
+        yukxh
+        Yukxh
+        Yuk
+        yuk
+        Boquinha de veludo
+        boquinha de veludo
+        Bundudo
+        bundudo
+        Tímido
+        tímido`
+},
+
+{
+    titulo: "Pai do PROTO_kk",
+    identificacao: "Pervertido",
+    identificacaodois: "Guloso",
+    identificacaotres: "BDSM",
+    tags: `
+        PROTO_kk
+        PROto_kk
+        proto_kk
+        Proto
+        proto
+        Pervertido
+        pervertido
+        Guloso
+        guloso
+        BDSM
+        bdsm`
+},
 ];
