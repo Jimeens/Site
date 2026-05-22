@@ -95,7 +95,7 @@ export const projetosGerais = [
         titulo: "Pai do leo_sasahara",
         identificacao: "Tímido",
         identificacaodois: "Boquinha de veludo",
-        identificacaotres: "Safado",
+        identificacaotres: "Da galera",
         tags: `
             leo_sasahara
             sasahara
@@ -109,8 +109,8 @@ export const projetosGerais = [
             timido
             Boquinha de veludo
             boquinha de veludo
-            Safado
-            safado`
+            Da galera
+            da galera`
     },
     {
     titulo: "Pai do carlosrck_",
@@ -131,7 +131,7 @@ export const projetosGerais = [
     {
         titulo: "Pai do FoneDeOuvidoRuim",
         identificacao: "Bundudo",
-        identificacaodois: "Safado",
+        identificacaodois: "Da galera",
         identificacaotres: "Guloso",
         tags: `
             FoneDeOuvidoRuim
@@ -140,8 +140,8 @@ export const projetosGerais = [
             fone
             Bundudo
             bundudo
-            Safado
-            safado
+            Da galera
+            da galera
             Guloso
             guloso`
     },
@@ -181,7 +181,7 @@ export const projetosGerais = [
         titulo: "Pai do notjeffsx",
         identificacao: "Guloso",
         identificacaodois: "Bundudo",
-        identificacaotres: "Safado",
+        identificacaotres: "Da galera",
         tags: `
             notJeffsx
             Jeff
@@ -190,12 +190,12 @@ export const projetosGerais = [
             guloso
             Bundudo
             bundudo
-            Safado
-            safado`
+            Da galera
+            da galera`
     },
     {
         titulo: "Pai da AreczinhaRck_",
-        identificacao: "Safado",
+        identificacao: "Da galera",
         identificacaodois: "Bundudo",
         identificacaotres: "BDSM",
         tags: `
@@ -203,8 +203,8 @@ export const projetosGerais = [
             areczinha
             arecs
             xerecs
-            Safado
-            safado
+            Da galera
+            da galera
             Bundudo
             bundudo
             BDSM
@@ -262,7 +262,7 @@ export const projetosGerais = [
 
     {
         titulo: "Pai do MaarNeee",
-        identificacao: "Safado",
+        identificacao: "Da galera",
         identificacaodois: "Boquinha de veludo",
         identificacaotres: "Especialista em rebolar",
         tags: `
@@ -271,8 +271,8 @@ export const projetosGerais = [
             Marne
             Maarneee
             maarneee
-            Safado
-            safado
+            Da galera
+            da galera
             Boquinha de veludo
             boquinha de veludo
             Especialista em rebolar
@@ -314,7 +314,7 @@ export const projetosGerais = [
         titulo: "Pai do oportuga",
         identificacao: "Guloso",
         identificacaodois: "Tímido",
-        identificacaotres: "Safado",
+        identificacaotres: "Da galera",
         tags: `
             oportuga
             Portuga
@@ -323,20 +323,20 @@ export const projetosGerais = [
             guloso
             Tímido
             tímido
-            Safado
-            safado`
+            Da galera
+            da galera`
     },
     {
         titulo: "Pai do vensx_",
-        identificacao: "Safado",
+        identificacao: "Da galera",
         identificacaodois: "Boquinha de veludo",
         identificacaotres: "Selvagem",
         tags: `
             vensx_
             Vens
             vens
-            Safado
-            safado
+            Da galera
+            da galera
             Boquinha de veludo
             boquinha de veludo
             Selvagem
@@ -379,7 +379,7 @@ export const projetosGerais = [
     {
         titulo: "Pai do zumbidaneve",
         identificacao: "Selvagem",
-        identificacaodois: "Safado",
+        identificacaodois: "Da galera",
         identificacaotres: "Pervertido",
         tags: `
             zumbidaneve
@@ -387,15 +387,15 @@ export const projetosGerais = [
             zumbi
             Selvagem
             selvagem
-            Safado
-            safado
+            Da galera
+            da galera
             Pervertido
             pervertido`
     },
     {
         titulo: "Pai do doodoug",
         identificacao: "Bundudo",
-        identificacaodois: "Selvagem",
+        identificacaodois: "Da galera",
         identificacaotres: "Boquinha de veludo",
         tags: `
             doodoug
@@ -405,8 +405,8 @@ export const projetosGerais = [
             Doug
             Bundudo
             bundudo
-            Selvagem
-            selvagem
+            Da galera
+            da galera
             Boquinha de veludo
             boquinha de veludo`
     },
@@ -429,15 +429,15 @@ export const projetosGerais = [
     },
     {
         titulo: "Pai da chuviscopsps",
-        identificacao: "Safado",
+        identificacao: "Da galera",
         identificacaodois: "Tímido",
         identificacaotres: "BDSM",
         tags: `
             chuviscopsps
             Chuvisco
             chuvisco
-            Safado
-            safado
+            Da galera
+            da galera
             Tímido
             tímido
             BDSM
@@ -464,7 +464,7 @@ export const projetosGerais = [
         titulo: "Pai do CaioFVS_",
         identificacao: "Especialista em rebolar",
         identificacaodois: "Bundudo",
-        identificacaotres: "Safado",
+        identificacaotres: "Da galera",
         tags: `
             CaioFVS_
             Caio
@@ -473,8 +473,8 @@ export const projetosGerais = [
             especialista em rebolar
             Bundudo
             bundudo
-            Safado
-            safado`
+            Da galera
+            da galera`
     },
 
     {
@@ -512,7 +512,7 @@ export const projetosGerais = [
     {
     titulo: "Pai do NightSann",
     identificacao: "Selvagem",
-    identificacaodois: "Safado",
+    identificacaodois: "Da galera",
     identificacaotres: "Especialista em rebolar",
     tags: `
         NightSann
@@ -522,8 +522,8 @@ export const projetosGerais = [
         night
         Selvagem
         selvagem
-        Safado
-        safado
+        Da galera
+        da galera
         Especialista em rebolar
         especialista em rebolar`
 },
